@@ -21,7 +21,7 @@ def embedding_from_string(
 
 
 # Ordenao a lista de termos de acordo com a proximidade da string de busca
-def search_pls(full_text, labels, semantic_string, number_of_suggestions, model, embedding_cache, embedding_cache_path):
+def search_pls(full_text, labels, titles, semantic_string, number_of_suggestions, model, embedding_cache, embedding_cache_path):
     semantic_string_embedding = get_embedding(
         semantic_string,
         engine=model
@@ -44,6 +44,7 @@ def search_pls(full_text, labels, semantic_string, number_of_suggestions, model,
             f"""
         --- Recommendation #{k_counter} (nearest neighbor {k_counter} of {number_of_suggestions}) ---
         String: {current_string}
+        Title: {titles[i]}
         Label: {labels[i]}"""        
         )
 
