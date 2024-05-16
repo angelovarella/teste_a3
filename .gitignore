@@ -1,0 +1,8 @@
+# Ignore .env file
+.env
+
+# Ignore test_data folder
+test_data/
+
+# Ignore pycache folder
+__pycache__/
