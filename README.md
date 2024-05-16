@@ -12,6 +12,8 @@ As pastas do projeto estão estruturadas da seguinte forma:
 
 Outras pastas temporárias são utilizadas ao longo do processo, porém estes arquivos são adicionados .gitignore no intuito de manter as melhores práticas para o repositório no GitHub.
 
+A apresentação deste desafio pode ser acessado [neste link](https://docs.google.com/presentation/d/1Lv8QndJ9dYqCNTzYxdFXlpg1D9i_YF5C0cmmhDnz4WY/edit?usp=sharing).
+
 ## Instalações
 
 Para replicar este projeto, certifique-se de ter os seguintes módulos Python instalados:
@@ -28,6 +30,6 @@ pip install pickle
 
 Para replicar o código utilizado é necessário ter uma chave da API da OpenAI. É possível criar uma [neste link](https://platform.openai.com/api-keys).
 
-## Acknowledgements
+## Reconhecimentos
 
 Obrigado por esta oportunidade. Fique à vontade para entrar em contato caso tenha alguma dúvida ou sugestão.
