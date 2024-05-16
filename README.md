@@ -1,20 +1,22 @@
-# A3 Sales Architect Challenge
+# Desafio de Sales Architect A3 Data
 
-## Introduction
+## Introdução
 
-This repository is dedicated to solving the data science challenge presented by A3 Data for the Sales Architect role.
+Este repositório é dedicado a resolver o desafio de ciência de dados apresentado pela A3 Data para a função de Sales Architect.
 
-The project folders are structured as follows:
+As pastas do projeto estão estruturadas da seguinte forma:
 
-- Functions: contains all the custom functions used in the challenge.
-- Notebooks: includes Jupyter notebooks used for data exploration, testing, and model development.
-- Outputs: stores all generated output files.
+- Funções: contém todas as funções personalizadas utilizadas no desafio.
+- Notebooks: inclui notebooks Jupyter usados para exploração de dados, testes e desenvolvimento de modelos.
+- Pasta raiz: arquivos de suporte
 
-## Installations
+Outras pastas temporárias são utilizadas ao longo do processo, porém estes arquivos são adicionados .gitignore no intuito de manter as melhores práticas para o repositório no GitHub.
 
-To replicate this project, ensure you have the following Python modules installed:
+## Instalações
 
-```python
+Para replicar este projeto, certifique-se de ter os seguintes módulos Python instalados:
+
+```bash
 pip install pandas
 pip install python-dotenv
 pip install numpy
@@ -24,6 +26,8 @@ pip install openai
 pip install pickle
 ```
 
+Para replicar o código utilizado é necessário ter uma chave da API da OpenAI. É possível criar uma [neste link](https://platform.openai.com/api-keys).
+
 ## Acknowledgements
 
-Thank you for this opportunity. Please feel free to reach out with any questions or suggestions.
+Obrigado por esta oportunidade. Fique à vontade para entrar em contato caso tenha alguma dúvida ou sugestão.
