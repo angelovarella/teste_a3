@@ -53,7 +53,7 @@ def gerar_informacoes(information: str) -> dict | None:
         {
             'type': 'function',
             'function': {
-                'name': 'info',
+                'name': 'sent_info',
                 'description': 'Retrieve sentiment and relevant information from text.',
                 'parameters': {
                     'type': 'object',
@@ -86,14 +86,14 @@ def gerar_informacoes(information: str) -> dict | None:
     prompt = f'''Consider the text between <<>> and follow the instructions below one by one:
                  - Assign the sentiment of the text between <<>> as 'positive', 'negative' or 'neutral'
                  - Extract at least 10 relevant infomrations or entities from the text between <<>>
-                 - The output should be a JSON object like this example and nothing else: {example}
+                 - The output should always be a JSON object with the sentiment and the info and nothing else, like this example: {example}
                  <<{information}>>'''
     
     obj = _chat_completion_chatgpt(
                 prompt=prompt,
                 model=os.environ.get('CHAT_MODEL'),
                 tool=tool,
-                tool_choice={'type': 'function', 'function': {'name': 'info'}},
+                tool_choice={'type': 'function', 'function': {'name': 'sent_info'}},
                 temperature=0)
     
     return obj

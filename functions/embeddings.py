@@ -44,8 +44,7 @@ def search_pls(full_text, labels, semantic_string, number_of_suggestions, model,
             f"""
         --- Recommendation #{k_counter} (nearest neighbor {k_counter} of {number_of_suggestions}) ---
         String: {current_string}
-        Label: {labels[i]}
-        Distance: {indices_of_distances[i]:0.3f}"""
+        Label: {labels[i]}"""        
         )
 
     return indices_of_distances
