@@ -1,8 +1,12 @@
 # Ignore .env file
 .env
 
-# Ignore test_data folder
+# Ignore test_data and outputs folders
 test_data/
+outputs/
 
 # Ignore pycache folder
 __pycache__/
+
+# Ignore .pkl files
+*.pkl

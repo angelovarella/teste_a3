@@ -1,15 +1,14 @@
-# A3 Data Scientist Challenge
+# A3 Sales Architect Challenge
 
 ## Introduction
 
-This repository is dedicated to solving the data science challenge presented by A3 Data for the Data Scientist role.
+This repository is dedicated to solving the data science challenge presented by A3 Data for the Sales Architect role.
 
 The project folders are structured as follows:
 
 - Functions: contains all the custom functions used in the challenge.
 - Notebooks: includes Jupyter notebooks used for data exploration, testing, and model development.
 - Outputs: stores all generated output files.
-- Test Data: holds the provided dataset and instructions for this test.
 
 ## Installations
 
@@ -21,7 +20,8 @@ pip install python-dotenv
 pip install numpy
 pip install matplotlib
 pip install scikit-learn
-pip install statsmodels
+pip install openai
+pip install pickle
 ```
 
 ## Acknowledgements
